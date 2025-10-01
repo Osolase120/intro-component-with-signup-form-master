@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-color: hsl(0, 100%, 74%) ;
+    height: 100%;
+    padding: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+
+h1 {
+    position: relative;
+    top: 50px;
+    color: hsl(0, 0%, 100%);
+    padding: 0 40px;
+   /* transform: translateY(55px); */
+    margin-left: 30px;
+    line-height: 1.2;
+}
+
+.See {
+    position: relative;
+    top: 75px;
+    color: hsl(0, 0%, 100%);
+    padding: 0 25px;
+    margin-right: 50px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+section:nth-child(2) {
+    position: relative;
+    top: 80px;
+}
+
+.Try {
+    position: relative;
+    top: 60px;
+    left: 40px;
+    height: 75px;
+    width: 372px;
+    border: 1px solid hsl(248, 32%, 49%);
+    border-radius: 10px;
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(0, 0%, 100%);
+    padding: 13px 98px;
+    font-weight: 700;
+    text-indent: -15px;
+}
+
+.then {
+    font-weight: 400;
+}
+
+form {
+    position: relative;
+    top: 80px;
+    left: 40px;
+    padding: 20px 20px;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+    width: 372px;
+}
+
+.input-control {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.input-control input {
+    display: block;
+    height: 50px;
+    width: 330px;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    padding: 0 15px;
+    outline: 0;
+}
+
+::placeholder {
+    font-weight: 700;
+    color: hsl(249, 10%, 26%);
+}
+
+
+.input-control i {
+    position: absolute;
+    top: 13px;
+    right: 30px;
+    visibility: hidden;
+}
+
+.input-control small {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    visibility: hidden;
+}
+
+.input-control.error input {
+    border-color: hsl(0, 100%, 74%);
+}
+
+.input-control.success input {
+    border-color: hsl(246, 25%, 77%);
+}
+
+.input-control.error i {
+    visibility: visible;
+}
+
+.input-control.error small {
+    color: hsl(0, 100%, 74%);
+    visibility: visible;
+}
+
+
+button {
+    height: 50px;
+    width: 330px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsla(154, 59%, 51%, 0.7);
+}
+
+.clicking {
+    position: relative;
+    top: 10px;
+    right: 2px;
+    padding: 0 20px;
+    color: hsl(246, 25%, 77%);
+    font-weight: 500;
+    font-size: 13px;
+    text-align-last: center;
+}
+
+.Terms {
+    color: hsl(0, 100%, 74%) ;
+}
+
+.attribution {
+    position: relative;
+    top: 170px;
+}
+
+@media screen and (max-width: 375px) {
+
+    h1 {
+    position: relative;
+    top: 50px;
+    color: hsl(0, 0%, 100%);
+    padding: 0 25px;
+    margin-left: 15px;
+    line-height: 1.2;       
+    }
+
+    .See {
+    position: relative;
+    top: 75px;
+    color: hsl(0, 0%, 100%);
+    padding: 0 3px;
+    margin-right: 5px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.Try {
+    position: relative;
+    top: 60px;
+    left: 7px;
+    height: 75px;
+    width: 350px;
+    border: 1px solid hsl(248, 32%, 49%);
+    border-radius: 10px;
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(0, 0%, 100%);
+    padding: 13px 95px;
+    font-weight: 700;
+    text-indent: -15px;
+}
+
+form {
+    position: relative;
+    top: 80px;
+    left: 7px;
+    padding: 20px 20px;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+    width: 350px;
+}
+
+.input-control input {
+    display: block;
+    height: 50px;
+    width: 300px;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    padding: 0 15px;
+    outline: 0;
+}
+
+button {
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+.clicking {
+    position: relative;
+    top: 10px;
+    right: 2px;
+    padding: 0 15px;
+    color: hsl(246, 25%, 77%);
+    font-weight: 500;
+    font-size: 13px;
+    text-align-last: center;
+}
+    
+}
+
+@media screen and (min-width:1440px) {
+
+    body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(0, 100%, 74%) ;
+    height: 100%;
+    padding: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+section:first-child {
+    position: relative;
+    top: 200px;
+}
+
+h1 {
+    position: relative;
+    top: 40px;
+    color: hsl(0, 0%, 100%);
+    padding: 0 355px;
+    margin-left: -80px;
+    line-height: 1.2;  
+    letter-spacing: 1.6px;     
+}
+
+.See {
+    position: relative;
+    top: 60px;
+    left: 40px;
+    color: hsl(0, 0%, 100%);
+    padding: 0 235px;
+    /* margin-right: 2px; */
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+section:nth-child(2) {
+    position: relative;
+    top: 10px;
+}
+
+.Try {
+    position: relative;
+    top: 60px;
+    left: -180px;
+    height: 55px;
+    width: 500px;
+    border: 1px solid hsl(248, 32%, 49%);
+    border-radius: 10px;
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(0, 0%, 100%);
+    padding:    17px 90px;
+    font-weight: 700;
+    text-indent: -15px;
+}
+
+form {
+    position: relative;
+    top: 80px;
+    left: -180px;
+    padding: 20px 20px;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+    width: 500px;
+}
+
+.input-control input {
+    display: block;
+    height: 50px;
+    width: 450px;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    padding: 0 15px;
+    outline: 0;
+}
+
+button {
+    height: 50px;
+    width: 450px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+.clicking {
+    position: relative;
+    top: 10px;
+    right: 2px;
+    padding: 0 15px;
+    color: hsl(246, 25%, 77%);
+    font-weight: 500;
+    font-size: 12px;
+    text-align-last: center;
+}
+
+.attribution {
+    position: relative;
+    top: 120px;
+}
+    
+}
