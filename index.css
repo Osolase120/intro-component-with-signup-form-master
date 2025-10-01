@@ -316,7 +316,7 @@ section:nth-child(2) {
 .Try {
     position: relative;
     top: 60px;
-    left: -180px;
+    left: -200px;
     height: 55px;
     width: 500px;
     border: 1px solid hsl(248, 32%, 49%);
@@ -331,7 +331,7 @@ section:nth-child(2) {
 form {
     position: relative;
     top: 80px;
-    left: -180px;
+    left: -200px;
     padding: 20px 20px;
     background-color: hsl(0, 0%, 100%);
     border: none;
@@ -379,4 +379,5 @@ button {
     top: 120px;
 }
     
+
 }
